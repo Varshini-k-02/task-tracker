@@ -1,0 +1,8 @@
+.container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-left: 400px;
+    margin-right: 400px;
+}
