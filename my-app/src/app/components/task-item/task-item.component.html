@@ -1,8 +1,16 @@
-<div class="task">
+<div [ngClass]="{ reminder: task.reminder }"
+class="task"
+>
   <h3>
     {{ task.text }}
-    <fa-icon [icon]="faTimes" style = "margin: calc(100% - 50px); color: red;"
+    <fa-icon
+      (click)="onDelete(task)"
+      [icon]="faTimes"
+      style=" color: red; cursor: pointer"
     ></fa-icon>
   </h3>
   <p>{{ task.day }}</p>
 </div>
+<!-- In line 1, the ngClass is a directive for conditionals
+reminder : is set to true if task.remainder === true else false
+'task.remainder' statement is used to check for true (Like in Java if(Stack.isEmpty()) )  -->

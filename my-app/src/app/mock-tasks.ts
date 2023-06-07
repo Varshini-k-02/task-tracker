@@ -20,3 +20,8 @@ export const TASKS: Task[] = [
     reminder: false,
 },
 ];
+
+
+// Here no quotation required for keys
+
+// JSON- quotation for strins and keys also
